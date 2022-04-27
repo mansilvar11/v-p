@@ -1,0 +1,338 @@
+*{
+
+}
+body{
+margin: 0;
+background-color: black;
+color: rgb(231, 231, 231);
+font-family: sans-serif;
+box-sizing: border-box;
+}
+/* navegacion */
+nav{
+    z-index: 2;
+    height: 90px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.logo{
+width: 180px;
+}
+.menu-list{
+list-style:none;
+display: flex;
+}
+.menu-item{
+    margin: 20px;
+    cursor:pointer;
+    transition: ease .5s;
+}
+.menu-item:hover{
+    color: rgb(190, 162, 0);
+}
+/* portada */
+.start{
+align-items: center;
+}
+.start{
+    position: relative;
+    background-image: url(./assets/bg.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+    width: 90%;
+    height: 80vh;
+    text-align: right;
+    justify-content: center;
+}
+.principal{
+padding-top: 20%;
+font-size: calc(1vw + 3rem);
+ 
+}
+.title{
+ margin-right: 5%;
+}
+.secondary{
+    font-size: 2rem;
+    font-weight: 300;
+}
+/* links a galerias */
+.gallery-links{
+    margin: auto;
+    align-content: center;
+    width: 100%;
+    height: 75vh;
+    background-image: url(./assets/fondo-dos.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.works-container{
+    padding: 10%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    display: flex;
+    margin: 5%;
+}
+.work-class{
+    display: flex;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    transition: all .5s;
+    
+}
+.work-class:hover{
+    background-color: rgba(0, 0, 0, 0.719);
+    color: whitesmoke ;
+}
+.works{
+    text-align: center;
+    margin-top: 40%;
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(190, 162, 0);
+}
+/* sobre mii */
+.about{
+    width: 80%;
+    height: 60vh;
+    background-image: url(./assets/sobre-mi.jpeg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 40%;
+    margin: 5%;
+    margin-top: 10%;
+    display: flex;
+}
+.about-me{
+    margin: 10%;
+    margin-top: 0;
+    margin-left: 50%;
+text-align: right;
+}
+.about-me h2{
+    font-size: 2.5rem;
+}
+.about-me p{
+    text-align: justify;
+    line-height: 1.5;
+}
+/* formulario de contacto */
+
+.info{
+    margin-top: 10%;
+    background-image: url(./assets/img-1.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 500px;
+    background-position-y: top;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::placeholder, textarea:focus:placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #bbb5af;
+  }
+  
+  /* on hover placeholder */
+  
+  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
+    color: #cbc6c1;
+  }
+  
+  .formulario {
+      width: 80%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+    
+   
+    background-size: 100%;
+ 
+    color: #d4d4d4;
+    padding-bottom: 10%;
+  }
+  .formulario h3{
+    padding-top: 10%;
+    font-size: 2rem;
+  }
+  
+  .hed {
+    position: relative;
+    margin: 100px 0 25px 0;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 7px;
+  }
+  #amarillo{
+    color: rgb(151, 129, 0);
+  }
+  
+  #form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 10px auto;
+  }
+  
+  input {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 500px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: rgb(151, 129, 0);    
+    border: solid 1px #b3aca79f;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover {
+    background: #00000071;
+    color: #e2dedb;
+  }
+  
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #666565;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px #b3aca79f;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  textarea:hover {
+    background: #00000070;
+    color: #e2dedb;
+  }
+  
+  #submit {
+    width: 532px;
+    max-width: 550px;
+    padding: 15px;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #b3aca79f;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: #e2dedb;
+  }
+/* footer */
+footer{
+  position: static;
+    height: 100px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer a{
+    width: 40px;
+}
+
